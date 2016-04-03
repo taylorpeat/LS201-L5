@@ -78,7 +78,7 @@ section:nth-child(2) {
   border-bottom: 20px solid black;
 }
 section:last-child p {
-  font-size: 18px;
+  font-size: 19px;
   padding: 15px 8px 15px 15px;
 }
 section:last-child p:before {
@@ -90,6 +90,7 @@ section:last-child p:before {
 table {
   font-family: Arial, sans-serif;
   width: 100%;
+  font-size: 19px;
 }
 thead {
   border-bottom: 1px solid black;
