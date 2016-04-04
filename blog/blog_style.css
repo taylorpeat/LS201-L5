@@ -1,0 +1,269 @@
+@import url("http://meyerweb.com/eric/tools/css/reset/reset.css");
+
+body {
+  background-color: #fff;
+  font: 20px Helvetica, Arial, sans-serif;
+}
+
+header {
+  background-color: #3d3d3d;
+  padding: 145px 0 55px 0;
+}
+header h1 {
+  display: block;
+  text-align: center;
+  margin: 0 auto 50px auto;
+  font-size: 68px;
+  color: #fff;
+  letter-spacing: 6px;
+}
+header img {
+  display: block;
+  margin: 0 auto 140px auto;
+}
+header nav {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+header li {
+  display: inline-block;
+  padding: 0 30px;
+}
+header a {
+  color: #fff;
+  font-size: 20px;
+}
+header a.selected {
+  color: #50c3af;
+}
+
+main {
+  padding: 80px 0 90px 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+section,
+aside {
+  box-sizing: border-box;
+}
+section {
+  text-align: justify;
+  float: left;
+  width: 70%;
+}
+aside {
+  overflow: hidden;
+  background-color: #f6f7f8;
+  padding: 35px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+main:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+article {
+  padding-bottom: 90px;
+  padding-right: 110px;
+}
+h2 {
+  margin-bottom: 25px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.post p:nth-child(2) {
+  margin-bottom: 35px;
+}
+article a {
+  color: #61c7b5;
+  text-decoration: none;
+}
+.post p:nth-child(3) {
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 16pt;
+  padding-bottom: 30px;
+  font-weight: bold;
+  color: #40474e;
+}
+
+a {
+  text-decoration: none;
+}
+
+aside ul {
+  padding-bottom: 115px;
+}
+aside li {
+  background: url("bullet.png") 0 6px no-repeat;
+  padding-left: 25px;
+}
+aside li,
+aside p {
+  color: #787b80;
+}
+
+aside p {
+  line-height: 1.5;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  width: 85px;
+  background-color: #50c3af;
+  color: #fff;
+  padding: 5px;
+  border-radius: 100px;
+  margin-right: 30px;
+  cursor: pointer;
+  border: none;
+  box-sizing: border-box;
+}
+.disabled {
+  background-color: #d2d5da
+}
+
+footer {
+  border-top: 1px solid #d0d0d0;
+  background-color: #fff;
+  color: #7e8287;
+  font-size: 14px;
+  padding: 20px 0 50px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.comments header {
+  background-color: #fff;
+  padding: 0 0 20px 0;
+}
+.comments header img {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+.comments h3 {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 20px;
+  vertical-align: middle;
+  padding: 0;
+}
+.comments article {
+  padding-bottom: 40px;
+}
+.comments p {
+  margin: 0;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+  font: 16px Helvetica, Arial, sans-serif;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  border: 1px solid #e2e2e2;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 140px;
+  resize: none;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 35px 0 20px 0;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  header img {
+    margin-bottom: 110px;  
+  }
+  header li {
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  main {
+    padding: 80px 0 90px 0;
+  }
+  section {
+    width: 100%;
+    padding: 0 25px 50px 25px;
+  }
+  section article {
+    padding-right: 0;
+  }
+  aside {
+    width: 100%;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  aside h3 {
+    font-size: 18px;
+    padding-bottom: 15px;
+  }
+  aside div {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+  }
+  aside ul {
+    padding: 0;
+  }
+  aside p {
+    font-size: 14px;
+  }
+  footer {
+    padding-left: 25px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    margin-bottom: 20px;
+  }
+  header h1 + img {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+  header li {
+    width: 49%;
+    padding: 0 0 20px 0;
+  }
+  header {
+    padding-bottom: 0;
+  }
+  aside {
+    background-color: transparent;
+    padding: 0 25px;
+  }
+  aside div {
+    display: block;
+    background-color: #f6f7f8;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+  }
+}
